@@ -1,0 +1,103 @@
+/* Estilo base para o corpo */
+body {
+    background-color: #2c2c2c; /* Cinza escuro */
+    color: #ffffff; /* Texto branco */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Título da página */
+h2 {
+    color: #77ff77; /* Verde claro */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Mensagem de feedback */
+b {
+    color: #ff7777; /* Vermelho para destaque */
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+}
+
+/* Campo de input */
+input[type="email"],
+input[type="password"] {
+    background-color: #333333; /* Cinza escuro */
+    border: 1px solid #77ff77; /* Borda verde */
+    color: #ffffff; /* Texto branco */
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 400px;
+    font-size: 1em;
+}
+
+/* Estilo dos botões */
+button {
+    background-color: #77ff77; /* Verde */
+    border: none;
+    color: #333333; /* Texto cinza escuro */
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+button:hover {
+    background-color: #55bb55; /* Verde mais escuro no hover */
+}
+
+/* Link de recuperação de senha */
+a {
+    color: #77ff77; /* Verde */
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+    display: block;
+}
+
+a:hover {
+    color: #55bb55; /* Verde mais escuro no hover */
+}
+
+/* Media Queries para Responsividade */
+
+/* Para telas menores que 600px */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 1.5em;
+    }
+
+    input[type="email"],
+    input[type="password"],
+    button {
+        font-size: 1em;
+        padding: 8px;
+    }
+}
+
+/* Para telas menores que 400px */
+@media (max-width: 400px) {
+    h2 {
+        font-size: 1.2em;
+    }
+
+    input[type="email"],
+    input[type="password"],
+    button {
+        font-size: 0.9em;
+        padding: 6px;
+    }
+}

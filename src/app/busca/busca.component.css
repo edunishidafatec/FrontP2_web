@@ -1,0 +1,127 @@
+/* Fundo cinza claro para a página */
+body {
+    background-color: #2c2c2c; /* Cinza escuro */
+    color: #ffffff; /* Texto branco para contraste */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título de busca */
+h4 {
+    color: #77ff77; /* Verde claro */
+    margin-bottom: 10px;
+}
+
+/* Estilo para a mensagem de "não encontrados" */
+.produtos {
+    color: #ff7777; /* Um tom de vermelho para chamar atenção */
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Campo de busca */
+input[type="text"] {
+    background-color: #333333; /* Cinza escuro */
+    border: 1px solid #77ff77; /* Borda verde */
+    color: #ffffff; /* Texto branco */
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Container dos itens de busca */
+div {
+    background-color: #444444; /* Cinza intermediário */
+    border: 1px solid #77ff77; /* Borda verde */
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Nome do produto */
+div h4 {
+    color: #77ff77; /* Verde claro */
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+/* Imagem do produto */
+img {
+    border: 1px solid #333333; /* Borda cinza escuro */
+    border-radius: 4px;
+    margin-bottom: 8px;
+    max-width: 100%;
+}
+
+/* Preço do produto */
+div p {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Botões */
+button {
+    background-color: #77ff77; /* Verde */
+    border: none;
+    color: #333333; /* Texto cinza escuro */
+    padding: 8px 16px;
+    margin-right: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #55bb55; /* Verde mais escuro no hover */
+}
+
+/* Ajustes para o botão "Comprar" */
+button:disabled {
+    background-color: #555555; /* Cinza para itens esgotados */
+    cursor: not-allowed;
+    color: #999999;
+}
+
+/* Media Queries para Responsividade */
+
+/* Para telas menores que 600px */
+@media (max-width: 600px) {
+    input[type="text"] {
+        padding: 6px;
+        width: 90%;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 0.9em;
+    }
+}
+
+/* Para telas menores que 400px */
+@media (max-width: 400px) {
+    h4, .produtos {
+        font-size: 1em;
+    }
+
+    input[type="text"] {
+        padding: 5px;
+        width: 100%;
+    }
+
+    img {
+        width: 80%;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+}

@@ -1,0 +1,115 @@
+/* Estilo base para o corpo */
+body {
+    background-color: #2c2c2c; /* Cinza escuro */
+    color: #ffffff; /* Texto branco */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Título da cesta */
+h1 {
+    color: #77ff77; /* Verde claro */
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Mensagem de feedback */
+b {
+    color: #ff7777; /* Vermelho para destaque */
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Estilo para a tabela */
+table {
+    width: 90%;
+    max-width: 800px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #444444; /* Cinza intermediário */
+    color: #ffffff;
+}
+
+th, td {
+    border: 1px solid #77ff77; /* Borda verde */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Linhas de título */
+tr:first-child {
+    background-color: #333333; /* Cinza escuro */
+    font-weight: bold;
+}
+
+/* Total na última linha */
+tr:last-child td {
+    font-weight: bold;
+    color: #77ff77; /* Verde claro */
+}
+
+/* Botão de remover item */
+button {
+    background-color: #ff7777; /* Vermelho para contraste */
+    color: #ffffff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff5555; /* Vermelho mais escuro no hover */
+}
+
+/* Botão de limpar a cesta */
+button:last-of-type {
+    background-color: #77ff77; /* Verde para destaque */
+    color: #333333;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:last-of-type:hover {
+    background-color: #55bb55; /* Verde mais escuro no hover */
+}
+
+/* Media Queries para responsividade */
+
+/* Para telas menores que 600px */
+@media (max-width: 600px) {
+    table, th, td {
+        font-size: 0.9em;
+    }
+
+    button, button:last-of-type {
+        padding: 8px;
+        font-size: 0.9em;
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}
+
+/* Para telas menores que 400px */
+@media (max-width: 400px) {
+    table, th, td {
+        font-size: 0.8em;
+        padding: 5px;
+    }
+
+    button, button:last-of-type {
+        font-size: 0.8em;
+        padding: 6px;
+    }
+}
